@@ -1,10 +1,10 @@
 body{
     background: linear-gradient(
         to right, 
-        #ff9e2c 0%, 
-        #ff9e2c 50%, 
-        #b6701e 50%, 
-        #b6701e 100%
+        #e3ebee 0%, 
+        #e3ebee  50%, 
+        #c4dfe9 50%, 
+        #c4dfe9 100%
       );  
 }
 
@@ -29,12 +29,28 @@ body{
     float:none;
 }
 
+#portfolio-image{
+    /* margin-left: 150px; */
+    height: 400px;
+    margin-top: 50px;
+
+}
+
 .form{
     width: 40%;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 100px;
     margin-top: 50px;
+ 
+}
+
+.form-control{
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    border-radius: 0px;
 }
 /* .nav-menu{
     width: 100%; 
@@ -62,7 +78,7 @@ body{
     font-size: 1em;
     padding-left: 20px;
   
-    padding-top: 30px;
+    padding-top: 20px;
    
 
 }
