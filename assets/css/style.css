@@ -1,18 +1,22 @@
 body{
     background: linear-gradient(
         to right, 
-        #e3ebee 0%, 
-        #e3ebee  50%, 
-        #c4dfe9 50%, 
-        #c4dfe9 100%
+        #f9f9f7 0%, 
+        #f9f9f7   50%, 
+        #e7e7ef 50%, 
+        #e7e7ef 100%
       );  
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
 }
 
 
 #logo{
     width: 70px;
     height: 70px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px;
 }
 
@@ -28,58 +32,11 @@ body{
     display: inline-block;
     float:none;
 }
-
-#portfolio-image{
-    /* margin-left: 150px; */
-    height: 400px;
-    margin-top: 50px;
-
-}
-
-.form{
-    width: 40%;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 100px;
-    margin-top: 50px;
- 
-}
-
-.form-control{
-    border: 0;
-    background: transparent;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    border-radius: 0px;
-}
-/* .nav-menu{
-    width: 100%; 
-    text-align:center;
-} */
-
-/* .nev-link{
-    display: flex; 
-    justify-content: center;
-} */
-/*  
-.header{
-    display: block;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-color:  rgb(72, 131, 126);
-} */
-
-/* #link-container{
-    padding-top: 20px;
-} */
 .links{
     color: black;
-    font-size: 1em;
+    font-size: 1.3em;
     padding-left: 20px;
-  
-    padding-top: 20px;
-   
+    padding-top: 50px;
 
 }
 
@@ -88,3 +45,78 @@ body{
     text-decoration: line-through;
 
 }
+
+#portfolio-image{
+    height: 400px;
+    margin-top: 70px;
+
+    /* opacity: .8; */
+
+}
+
+#computer-image{
+    width: 500px;
+    height: 600px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 0%;
+}
+
+#form-input{
+    height: 70px;
+
+}
+
+#form-textarea{
+    height: 120px;
+}
+
+#form-input, #form-textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+.form{
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 30%; 
+    padding-left:0px;
+}
+
+
+.form-control{
+    /* border: 0; */
+    background: transparent;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+#form-input:focus, #form-input:active, #form-textarea:focus, #form{
+    outline:none !important;
+    box-shadow:5px 10px #ababc6 ;
+    background: transparent;  
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+#submit-button{
+  margin-top: 10px;
+    width: 100%;
+    border-radius: 0px;
+    height: 60px;
+}
+
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px){
+    .form{
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin-top: 30%; 
+    }
+  }
