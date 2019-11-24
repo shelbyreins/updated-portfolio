@@ -39,29 +39,21 @@ body{
 }
 .links{
     color: black;
-    font-size: 1em;
+    font-size: 1.1em;
     padding-left: 20px;
     padding-top: 25px;
     font-family: 'Tajawal', sans-serif;
-  
 
 }
 
 .links:hover{
     color: black;
     text-decoration: line-through;
+    font-size: 1.2em;
 
 }
 
-#portfolio-image{
-    display:block;
-    margin: 0 auto;
-    height: 300px;
-    width: 50%;
-    /* margin-top: 70px; */
-    
 
-}
 
 #computer-image{
     width: 500px;
@@ -70,10 +62,6 @@ body{
     margin-bottom: 50px;
     padding-left: 0%;
 }
-/* font-family: 'Tajawal', sans-serif;
-font-family: 'Frank Ruhl Libre', serif;
-font-family: 'Karma', serif;
-font-family: 'Tenor Sans', sans-serif; */
 
 #sentence-line1{
     font-family: 'Frank Ruhl Libre', serif;
@@ -94,15 +82,30 @@ font-family: 'Tenor Sans', sans-serif; */
 #index-button{
    background: #b8b8c4;
    color: #f9f9f7 ;
-    /* width: 60%; */
     border-radius: 0px;
     height: 40px;
     padding-bottom: 40px;
     border: #bfbfc9;
-   
+    font-family: Arial, Helvetica, sans-serif;    
 }
 #index-button:hover{
     background: #a1a1ac;
+}
+
+#portfolio-image{
+    display:block;
+    margin: 0 auto;
+    height: 300px;
+    width: 50%;
+    /* margin-top: 70px; */
+}
+.aboutMe-title{
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.aboutMe{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.2em;
+
 }
 
 
@@ -114,6 +117,7 @@ font-family: 'Tenor Sans', sans-serif; */
     margin-top: 50px;
     padding-top: 60px;
     /* font-size: 2em; */
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 #contact-container{
@@ -126,9 +130,9 @@ font-family: 'Tenor Sans', sans-serif; */
     width: 80%;
 }
 
-/* #portfolio-title{
-   font-size: 2em;
-} */
+#portfolio-title{
+font-family: 'Frank Ruhl Libre', serif;
+}
 
 #form-input{
     height: 70px;
@@ -175,8 +179,15 @@ font-family: 'Tenor Sans', sans-serif; */
     width: 100%;
     border-radius: 0px;
     height: 60px;
+    background: #b8b8c4;
+    color: #f9f9f7 ;
+    border:#b8b8c4;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 
+#submit-button:hover{
+    background: #a1a1ac;
+}
 .project-image-group1{
     width:100%;
     height: 275px;
@@ -186,6 +197,7 @@ font-family: 'Tenor Sans', sans-serif; */
     background-size: 100%;
     background-position: center;
     transition: 0.5s;
+    position: relative;
 }
 
 .project-image-group2{
@@ -198,14 +210,46 @@ font-family: 'Tenor Sans', sans-serif; */
     background-size: 100%;
     background-position: center;
     transition: 0.5s;
+    position: relative;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 .project-image-group1:hover, .project-image-group2:hover{
     background-size: 110%;
+   
 }
-/* .project-image-group1:after, .project-image-group2:after{
-    content: attr(data-text);
-} */
+
+.project-image-group1:after, .project-image-group2:after{
+    position: absolute;
+    top:85%;
+    bottom:0;
+    left:0;
+    right: 0;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    overflow: hidden;
+    background:  rgb(0,0,0,0.3);
+    color: #fff;
+    padding: 0 10px;
+    content:attr(data-text);
+    transition: 0.5s;
+
+
+}
+
+.project-image-group1:hover:after, .project-image-group2:hover:after{
+    top:0;
+    padding: 8px;
+
+}
+
+.project-image-group1:first-line, .project-image-group2:first-line{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Frank Ruhl Libre', serif;
+}
 
 @media only screen 
   and (min-width: 320px) 
