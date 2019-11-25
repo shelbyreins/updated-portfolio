@@ -97,7 +97,6 @@ body{
     margin: 0 auto;
     height: 300px;
     width: 50%;
-    /* margin-top: 70px; */
 }
 .aboutMe-title{
     font-family: 'Frank Ruhl Libre', serif;
@@ -121,8 +120,7 @@ body{
 }
 
 #contact-container{
-    margin-top: 145px;
-    padding-top: 60px;
+    margin-top: 10px;
     
 }
 
@@ -151,7 +149,7 @@ font-family: 'Frank Ruhl Libre', serif;
 .form{
     margin: 0 auto;
     width: 70%;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     /* margin-top: 30%;  */
     padding-left:0px;
 }
@@ -175,19 +173,27 @@ font-family: 'Frank Ruhl Libre', serif;
 }
 
 #submit-button{
-  margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     border-radius: 0px;
     height: 60px;
-    background: #b8b8c4;
+    background: #ababc6 ;
     color: #f9f9f7 ;
-    border:#b8b8c4;
+    border:#ababc6 ;
     font-family: Arial, Helvetica, sans-serif;  
+    font-size: 1.3em;
 }
 
 #submit-button:hover{
     background: #a1a1ac;
 }
+
+.fab{
+    color: black;
+  padding: 6px;
+  margin: 0 auto;
+}
+
 .project-image-group1{
     width:100%;
     height: 275px;
@@ -256,8 +262,99 @@ a:hover, a:visited, a:link, a:active{
   and (max-width: 480px){
     .form{
         width:90%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-        margin-top: 30%; 
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 20px;
     }
+
+    #index-button{
+        display: inline-block;
+        text-align: center;   
+     }
+
+     #sentence-line2{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        padding: 15px;
+        display: block;
+        text-align: center;
+        
+    }
+    
+    .navbar-nav > li {
+        display: inline-block;
+      
   }
+
+  #contact-title{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    padding-top: 0px;
+    }
+
+#contact-container{
+    margin-top: 10px;  
+    }
+
+.project-image-group2{
+    width:auto;
+    max-width: 100%;
+    height: 275px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    }
+
+    #portfolio-image{
+        margin: 0 auto;
+        height: 300px;
+        width:auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px){
+
+    #portfolio-image{
+        margin: 0 auto;
+        height: 300px;
+        width:auto;
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav {
+        padding: 15px;
+        display: block;
+        text-align: center;
+        
+    }
+    
+    .navbar-nav > li {
+        display: inline-block;
+      
+    }
+
+    #contact-title{
+        margin-left: 50px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        padding-top: 0px;
+        }
+
+    #sentence-line2{
+        text-align: center;
+        margin-left: 0;
+    }
+     #index-button{
+        display: inline-block;
+        text-align: center;   
+     }
+
+}
